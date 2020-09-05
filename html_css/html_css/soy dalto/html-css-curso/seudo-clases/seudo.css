@@ -1,0 +1,45 @@
+form{
+
+      padding: 8%;
+      margin: 25px;
+      display: block;
+      border: 2px solid red;
+      
+
+}
+
+input{
+      display: inline-block;
+      text-align: center;
+
+}
+
+/*p::placeholder{
+
+      color: red;
+      font-size: large;
+}*/
+
+p::selection{
+
+      
+      color: cadetblue;
+      background-color: black;
+      font-size: large;
+}
+
+p::before{
+      content: "holis ";
+      color: rebeccapurple;
+      
+      }
+      
+
+p::after{
+content: " adios";
+color: rebeccapurple;
+
+}
+
+      
+

@@ -1,0 +1,23 @@
+div{
+      border: 9px solid red;
+      width: 800px;
+      height: 600px;
+
+}
+
+img{
+      border: 9px solid green;
+      object-fit: scale-down;
+      object-position: left;
+      cursor: pointer;
+      /*
+      scale-down
+      se queda coon la que mas le conviene
+      manteniendo cosas, no rellena espacios en blanco
+
+
+      cover se agranda bien
+
+      
+      */
+}

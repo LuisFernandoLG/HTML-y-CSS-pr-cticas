@@ -1,0 +1,48 @@
+.flex-container{
+      display: flex;
+      justify-content: space-evenly;
+      
+      
+      
+
+
+     /* align-content: flex-start;
+      content para varias 
+      lineas*/
+      flex-wrap: wrap;
+      /*para una sola linea*/
+      align-items: flex-start;
+
+
+      /*
+      center --> centra el contenido
+      
+      space-around --> centra dando un maegin automatico en todos los lados
+      space-between --> deja el mayo espacio entre los elemetnos o divs
+
+      space-evently --> da margenes pero iguales entre los elementos
+      */
+
+      /*flex-direction
+      eje x y eje y
+      */
+
+      /*flex-wrap
+      cambia el orden de los elementos
+      */
+      
+}
+
+.flex-item{
+      background-color: darkred;
+      padding: 9px;
+      margin: 9px;
+      height: 190px;
+      width: 250px;
+      min-width: 1;
+      flex-basis: 100px;
+}
+.ultima{
+
+      /*la caja toma todo el espacio sobrante*/
+}

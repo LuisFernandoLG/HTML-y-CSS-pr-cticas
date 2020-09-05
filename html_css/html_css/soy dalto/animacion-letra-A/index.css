@@ -1,0 +1,76 @@
+.container{
+      width: 500px;
+      height: 500px;
+
+      margin: 120px auto;
+
+
+      background-color: #d32f2f ;
+
+      display: flex;
+
+      justify-content: center;
+      align-items: center;
+
+
+}
+
+.container__letra{
+      font-size: 500px;
+      font-family: 'Roboto', sans-serif;
+      color: white;
+
+      
+
+
+}
+
+.container:hover > .container__letra{
+      animation-name: hoverr;
+      animation-duration: 1s;
+
+      animation-fill-mode: forwards;
+      animation-iteration-count: 1;
+      animation-direction: alternate;
+      transition-timing-function: ease;
+
+
+
+}
+
+.container:hover{
+      animation-name: hoverr2;
+      animation-duration: 1s;
+
+       
+      animation-fill-mode: forwards;
+}
+
+
+
+@keyframes hoverr {
+      0%{
+
+      }
+ 
+
+      100%{
+           font-size: 550px;
+           color: #d32f2f;
+
+      }
+
+
+}
+
+@keyframes hoverr2{
+      0%{
+
+      }
+
+      100%{
+            transform: scale(1.1);
+            background-color: aliceblue;
+            box-shadow: 10px 10px 20px -10px #505050;
+      }
+}

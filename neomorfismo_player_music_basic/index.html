@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- STYLES -->
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="index.css" />
+
+    <!--ANIMATIONS-->
+    <link rel="stylesheet" href="animations.css" />
+
+    <!-- FONTS -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;500;600;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--
+        Font Awesone
+    -->
+
+    <script
+      src="https://kit.fontawesome.com/e2bb560564.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="player">
+      <div class="header-player">
+        <div class="button_header btn-style button_small">
+          <i class="fas fa-arrow-left button__icon"> </i>
+        </div>
+
+        <div class="header-text">
+          <h1 class="header-text__h1 weight-200">
+            PLAYING NOW
+          </h1>
+        </div>
+
+        <div class="button_header btn-style button_small">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+
+      <div class="cover">
+        <img
+          class="cover__img"
+          src="sleeping_at_last.jpg"
+          alt="Sleeping at last"
+        />
+      </div>
+
+      <div class="song">
+        <h3 class="song__tittle weight-500">Private Eyes</h3>
+        <h5 class="song__artist weight-200">Sleeping At Last</h5>
+      </div>
+
+      <div class="bar">
+        <div class="times">
+          <h6 class="times__start">0:00</h6>
+          <h6 class="times__over">3:26</h6>
+        </div>
+
+        <input type="range" class="bar__bar" min="0" max="50" />
+
+        <!--HIDDEN-->
+        <audio autoplay class="audio" id="player">
+          <source src="private_eyes.mp3" type="audio/mpeg"/>
+        </audio>
+      </div>
+
+      <div class="controls">
+        <div class="button btn-style button_medium">
+          <i class="fas fa-backward"></i>
+        </div>
+        <div class="button btn-style button_medium">
+          <i class="fas fa-pause button__pause"></i>
+        </div>
+        <div class="button btn-style button_medium">
+          <i class="fas fa-forward"></i>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

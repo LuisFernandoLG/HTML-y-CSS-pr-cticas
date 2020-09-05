@@ -1,0 +1,17 @@
+.div-container{
+      display: flex;
+      height: 500px;
+      width: 500px;
+      background-color: #505050;
+      flex-wrap: wrap;
+}
+
+div div{
+      background-color: turquoise;
+      width: 400px;
+      height: 400px;
+}
+
+.caja1{
+      background-color:violet;
+}

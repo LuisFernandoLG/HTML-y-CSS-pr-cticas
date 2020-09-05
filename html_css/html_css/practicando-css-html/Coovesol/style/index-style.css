@@ -1,0 +1,327 @@
+:root{
+      --primario: #F50057;
+}
+
+*{
+      font-family: 'Raleway', sans-serif;
+}
+
+.weigth-800{
+      font-weight: 800;
+}
+
+.weigth-400{
+      font-weight: 400;
+}
+
+.weigth-200{
+      font-weight: 200;
+}
+
+
+img{
+      width: 400px;
+      height: 400px;
+}
+
+
+.grid-container{
+
+      width: 95%;
+      height: 100vh;
+
+      margin: 0 auto;
+
+      /* GRID */
+      display: grid;
+
+      grid-template-areas: 
+      "header header header header"
+
+      "article article article article"
+      "article2 article2 article2 article2"
+      "footer footer footer footer"
+      ;
+
+      grid-template-rows: 600px 1fr 1fr 80px;
+      row-gap: 20px;
+
+}
+
+
+/* HEADER ------------------------------------------------------------------------------------- */
+.header{
+      grid-area: header;
+
+      display: grid;
+
+      grid-template-columns: repeat(4,1fr);
+      grid-row: 2fr;
+
+
+      background: url(../img/ilustraciones/wave.svg) no-repeat;
+      background-position: bottom#F50057;
+
+
+
+}
+
+.hero-text{
+      grid-column: 1/ span 2;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+}
+
+.hero-text__tittle{
+      font-size: 50px;
+}
+
+.hero-text__phrase{
+      margin-top: 10px;
+      font-size: 20px;
+}
+
+.button-contact{
+      margin-top: 20px;
+      background-color: var(--primario);
+      width: 140px;
+      height: 40px;
+
+      display: flex;
+
+      justify-content: center;
+      align-items: center;
+}
+
+.button-contact__text{
+      color: #fff;
+      
+      text-decoration: none;
+}
+
+
+.img-container-cover{
+      grid-column: 3 / span 2;
+      padding: 20px;
+
+}
+
+.img-container-cover__img{
+
+      width: 90%;
+      height: 100%;
+}
+
+/* IDENTIDAD -------------------------------------------------------------------*/
+.identidad{
+
+      grid-area: article;
+
+
+      display: flex;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+
+
+
+
+}
+
+.mision, .vision, .filosofia{
+      max-width: 180px;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+}
+
+.mision__img, .vision__img, .filosofia__img{
+      width: 100%;
+      height: 30%;
+}
+
+.mision__tittle, .vision__tittle, .filosofia__tittle{
+      margin-top: 20px;
+      font-size: 25px;
+}
+
+
+.mision__quote, .vision__quote, .filosofia__quote{
+      width: 70%;
+      margin-top: 10px;
+      font-size: 15px;
+      text-align: center;
+}
+
+
+
+
+
+/* NOSOTROS ---------------------------------------------------- */
+.nosotros{
+
+      grid-area: article2;
+
+      display: grid;
+
+      grid-template-areas:
+      "ayuda ayuda ayuda ayuda"
+      "historia historia historia historia"
+      ;
+
+      row-gap: 30px;
+}
+
+.help{
+      grid-area: ayuda;
+
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+}
+
+.help__img{
+      flex-grow: 1;
+
+      padding: 30px;
+}
+
+.information-help{
+      max-width: 60%;
+
+      display: flex;
+      
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+}
+
+.information-help__tittle{
+
+      font-size: 1.875rem;
+
+}
+.information-help__quote{
+      max-width: 80%;
+      margin-top: 20px;
+      font-size: 1.0625rem;
+      text-align: center;
+
+}
+
+
+.history{
+      grid-area: historia;
+
+      display: flex;  
+      flex-wrap: wrap;
+      justify-content: center;
+}
+
+.history__img{
+
+      flex-grow: 1;
+
+      padding: 30px;
+      
+      
+
+}
+
+
+.information-history{
+      max-width: 60%;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+}
+
+
+.information-history__tittle{
+      font-size: 1.875rem;
+
+}
+
+
+.information-history__quote{
+      font-size: 1.0625rem;
+      max-width: 80%;
+      margin-top: 20px;
+      text-align: center;
+
+}
+
+
+
+.footer{
+      grid-area: footer;
+
+      background-color: var(--primario);
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+}
+
+.footer__text{
+      font-weight: 400;
+      color:#fff;
+      font-size: 15px;
+
+      text-align: center;
+}
+
+
+@media screen and (max-width:526px){
+
+      .grid-container{
+            width: 100%;
+      }
+
+      .hero-text{
+            grid-column: 1 / -1;
+            grid-row: 1 / span 1;
+      }
+
+      .img-container-cover{
+            grid-column: 1 / -1;
+            grid-row: 2 / 3;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+      }
+
+      .mision, .vision, .filosofia{
+            margin-bottom: 30px;
+      }
+
+      .information-history__tittle{
+            font-size: 20px;
+      }
+
+      .information-help__quote, .information-history__quote{
+            max-width: 90%;
+      }
+   
+
+      
+      
+}
+
+@media screen and (max-width:360px){
+  
+      .information-help__tittle, .information-history__tittle{
+            font-size: 20px;
+      }
+
+ 
+}
+

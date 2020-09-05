@@ -1,0 +1,176 @@
+:root{
+
+      --azul-primario: #1A237E;
+
+}
+
+body{
+      font-family: Helvetica;
+      font-size: 13px;
+}
+
+
+.grid-container{
+      width: 70%;
+      height: 46.875rem;
+
+      max-width: 400px;
+
+      margin: 0.625rem auto;
+
+
+
+
+      /* GRID */
+      display: grid;
+
+      grid-template-areas:
+      "logo logo logo logo"
+      
+      "tittle tittle tittle tittle"
+
+      "form form form form"
+      "form form form form"
+      
+      "buttom buttom buttom buttom"
+      
+      "footer footer footer footer"
+      ;
+
+      grid-template-rows: 15.625rem 3.125rem repeat(2, 1fr) 2.5rem 4.125rem;
+
+}
+
+.user-container{
+      grid-area: logo;
+
+      padding: 1.25rem;
+
+
+}
+
+.user-container__img{
+      width: 100%;
+      height: 100%;
+
+      transition-duration: .5s;
+}
+
+.user-container__img:hover{
+      transform: scale(1.2);
+}
+
+.tittle-container{
+      grid-area: tittle;
+      padding: 0.625rem;
+}
+
+.tittle-container__text{
+      text-align: center;
+      
+      font-size: 1.875rem;
+}
+
+.form-container{
+      grid-area: form;
+
+      padding: 1.875rem;
+
+      /* FLEX */
+      display: flex;
+      flex-direction: column;
+
+      align-items: center;
+}
+
+.form-container__input{
+      width: 100%;
+      height: 3.125rem;
+}
+
+.form-container__input:nth-child(1){
+      margin-bottom: 0.625rem;
+}
+
+.form-container__input-tyle{
+       border: none;
+       border-bottom: 0.125rem solid #505050;
+}
+
+.form-container__input-tyle:focus{
+      border-bottom:0.125rem solid var(--azul-primario) ;
+}
+
+
+
+.buttom-container{
+      width: 9.375rem;
+      height: 3.125rem;
+      margin: auto;
+
+      border-radius: 30px;
+      padding: 0.9375rem;
+
+      background-color: var(--azul-primario);
+
+      /* FLEX      */
+      display: flex;
+      align-items: center; /*  VERTICALMETE */
+
+      justify-content: center;
+}
+
+.buttom-container__text{
+
+      
+
+      text-decoration: none;
+      color: white;
+      font-size: 1.125rem;
+
+}
+
+
+.footer-container{
+      grid-area: footer;
+
+      /* FLEX */
+      display: flex;
+      align-items: center; /*  VERTICALMETE */
+
+      justify-content: center;
+
+}
+
+.footer-container__text{
+      color: var(--azul-primario);
+
+      text-decoration: none;
+}
+
+@media screen and (max-width:400px){
+
+      body{
+            font-size: 15px;
+      }
+
+      .grid-container{
+            width: 100%;
+            height: 90vh;
+
+      
+      }
+}
+
+@media screen and (min-width:800px){
+
+      body{
+            font-size: 18px;
+      }
+
+      .grid-container{
+            border-radius: 30px;
+            box-shadow: 5px 5px 30px -10px #505050;
+      }
+}
+

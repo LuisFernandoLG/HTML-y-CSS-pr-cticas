@@ -1,0 +1,10 @@
+
+:root{
+
+      --fondo: #505050;
+
+}
+
+body{
+      background-color: var(--fondo);
+}

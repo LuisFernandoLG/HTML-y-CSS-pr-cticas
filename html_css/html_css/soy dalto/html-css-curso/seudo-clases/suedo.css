@@ -1,0 +1,46 @@
+*{
+      font-family:Helvetica;
+      font-size: 30px;
+      font-weight: 100;
+
+}
+
+.caja_1{
+      height: 200px;
+      width: 200px;
+      background-color: #505050;
+      transition: all .7s;
+}
+
+.caja_1:hover{
+      background-color: red;
+      height: 250px;
+      width: 250px;
+
+      /*SE PUEDEN CAMBIAR MUCHAS PROPIEDADES DEL ELEMENTO, EL EVENTO ES AL PASAR EL MOUSE POR ENCIMA*/
+}
+
+.caja_2{
+      height: 200px;
+      width: 200px;
+      background-color: black;
+      transition: all .3s
+}
+
+.caja_2:active{
+      width: 500px;
+      background-color: blueviolet;
+}
+
+
+.buttom{
+      background-color: brown;
+      padding: 9px;
+      margin: 4px;
+      }
+
+.buttom:active{
+      display: block;
+      background-color: black;
+      
+}

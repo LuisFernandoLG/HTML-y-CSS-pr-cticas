@@ -1,0 +1,94 @@
+* {
+    font-family: "Raleway", sans-serif;
+}
+
+:root {
+    --primary: #4caf82;
+    --hover_primary: #4caf50;
+    --secundary: #4c79af;
+    --hover-secundary: #547f91;
+
+
+    --white: #fff;
+    --black: #000;
+}
+
+.weight-200 {
+    font-weight: 200;
+}
+
+.weight-400 {
+    font-weight: 400;
+}
+
+.weight-800 {
+    font-weight: 800;
+}
+
+.container{
+    
+}
+
+.cards{
+    
+    width: 100vw;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+
+.card{
+    margin: 10px 0;
+
+    width: 50%;
+
+    
+    border-bottom: 1px solid var(--black);
+  
+
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.card:last-child{
+    border-bottom: none;
+
+}
+
+.card__container-img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-img__img{
+    border-radius: 50%;
+    border: 3px solid var(--black);
+    width: 60%;
+    height: 60%;
+}
+
+.card__name{
+    font-size: 17px;
+    padding: 10px;
+
+    text-align: center;
+}
+
+.card__rol{
+    font-size: 13px;
+
+
+    text-align: center;
+}

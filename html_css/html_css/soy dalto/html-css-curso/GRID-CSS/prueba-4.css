@@ -1,0 +1,87 @@
+.container{
+      display: grid;
+      margin: auto;
+
+      width: 600px;
+      height: 600px;
+
+      grid-template-columns: repeat(3,1fr);
+
+      grid-template-rows: repeat(3,1fr);
+
+      background-color:#505050;
+      border: 3px solid black;
+      
+
+      /*justify-items: center;
+      /*horizontalmente*/
+
+      /*align-items: center;      verticalmente*/
+
+      /*contenido*/
+
+      /*center, star, end*/
+
+
+      
+      align-items: center;
+      justify-items: center;
+
+
+      /*Tienen las mismas propiedades que flex*/
+      justify-content: center;
+      align-content: center;
+/*      alinea columans y rows      
+      */
+}
+
+
+.caja{
+      background-color: gray;
+      border: 1px solid black;
+      padding: 50px;
+      
+}
+
+.caja:nth-child(1){
+      justify-self: start;
+      align-self: flex-start;
+}
+
+.caja:nth-child(5){
+
+}
+
+.caja:nth-child(6){
+      justify-self: start;
+}
+
+.caja:nth-child(2){
+      align-self: flex-end;
+}
+
+.caja:nth-child(3){
+      align-self: flex-start;
+      justify-self: flex-end;
+}
+
+.caja:nth-child(4){
+      justify-self: end;
+      /*order, es como un z-index*/
+}
+
+.caja:nth-child(7){
+      align-self: flex-end;
+      justify-self: start;
+}
+
+.caja:nth-child(8){
+      align-self: flex-start;
+}
+
+.caja:nth-child(9){
+      place-self:end flex-end;
+      /*align , justify*/
+}
+
+/**/

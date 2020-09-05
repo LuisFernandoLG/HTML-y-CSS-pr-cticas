@@ -1,0 +1,51 @@
+.container{
+      background-color: violet;
+      height: 800px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+}
+
+header{
+      width: 100%;
+      height: 8vh;
+      background-color: teal;
+
+}
+
+.main{
+      display: flex;
+      width: 100%;
+      height: 85vh;
+}
+
+article{
+      width: 70%;
+      height: 100%;
+      background-color: tomato;
+}
+
+aside{
+      width: 30%;
+      height: 100%;
+      background-color: yellowgreen;
+}
+
+footer{
+      width: 100%;
+      height: 10%;
+      background-color: brown;
+}
+
+
+@media screen and (max-width:500px){
+      .main{
+            flex-direction: column;
+      }
+      article{
+            width: 100%;
+      }
+      aside{
+            width: 100%;
+      }
+}

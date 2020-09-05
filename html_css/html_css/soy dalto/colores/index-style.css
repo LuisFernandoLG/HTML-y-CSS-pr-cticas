@@ -1,0 +1,186 @@
+body{
+
+      background: #D3CCE3;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #E9E4F0, #D3CCE3);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #E9E4F0, #D3CCE3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.container{
+
+      width: 80%;
+      height: 60vh;
+
+      margin: 10% auto;
+
+      border-radius: 30px;
+      background-color: white;
+
+      box-shadow: 50px 50px 200px -40px #505050;
+
+      /* GRID */
+}
+
+header{
+      width: 100%;
+      height: 20%;
+
+      border-top-left-radius: 30px;
+      border-top-right-radius: 30px;
+
+      
+
+}
+
+.logo-container{
+      width: 80px;
+      height: 80px;
+
+      border-radius: 50%;
+      margin: auto;
+      background-color: white;
+      box-shadow: 10px 10px 40px -10px black;
+
+      position: relative;
+      top: -30px;
+      
+}
+
+.logo-container__logo{
+      text-align: center;
+      font-size: 50px;
+      padding: 10px;
+}
+
+.grid-container{
+      width: 100%;
+      height: 80%;
+
+      -color: cadetblue;
+
+      border-bottom-left-radius: 30px;
+      border-bottom-right-radius: 30px;
+
+      display: grid;
+
+      grid-template-areas:
+      "color-1 color-2 color-3 color-4"
+      
+      ;
+}
+
+.card-1{
+      grid-area: color-1;
+}
+
+
+.card-1__nombre-color{
+      width: 100%;
+      height: 10%;
+}
+
+.card-1__color{
+      width: 100%;
+      height: 90%;
+
+      background-color: #D55F8F;
+      border-bottom-left-radius: 30px;
+
+}
+
+
+
+.card-2{
+      grid-area: color-2;
+}
+
+.card-2__nombre-color{
+      width: 100%;
+      height: 10%;
+}
+
+.card-2__color{
+      width: 100%;
+      height: 90%;
+
+      background-color: #F298A6;
+
+}
+
+.card-3{
+      grid-area: color-3;
+}
+
+.card-3__nombre-color{
+      width: 100%;
+      height: 10%;
+}
+
+.card-3__color{
+      width: 100%;
+      height: 90%;
+
+      background-color: #FAF3E3;
+
+}
+
+
+
+.card-4{
+      grid-area: color-4;
+}
+
+
+.card-4__nombre-color{
+      width: 100%;
+      height: 10%;
+}
+
+.card-4__color{
+      width: 100%;
+      height: 90%;
+
+      background-color: #ACE097;
+      border-bottom-right-radius: 30px;
+
+}
+
+.card-1__nombre-color, .card-2__nombre-color, .card-3__nombre-color, .card-4__nombre-color{
+      font-size: 15px;
+      text-align: center;
+}
+
+@media screen and (max-width:600px){
+  
+
+      .grid-container{
+
+            height: 80vh;
+
+            grid-template-areas:
+            "color-1 color-2"
+            "color-3 color-4"
+            ;
+
+            row-gap: 10px;
+      }
+
+      .card-1__color{
+            border-bottom-left-radius: 0px;
+      }
+
+      .card-3__color{
+            border-bottom-left-radius: 30px;
+      }
+
+      .logo-container{
+            width: 60px;
+            height: 60px;
+      }
+
+      .logo-container__logo{
+            font-size: 30px;
+      }
+
+      
+}

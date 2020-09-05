@@ -1,0 +1,9 @@
+.button-contact__text{
+      outline: none;
+
+}
+
+.button-contact:hover{
+      background-color: #ec3576;
+
+}

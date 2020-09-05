@@ -1,0 +1,12 @@
+h2{
+      background-color: red;
+      padding: 70px;
+      display: inline-block;
+      border-radius: 9px;
+      border: 2px solid blue;
+      box-shadow: -10px 10px 15px 0 black;
+      text-shadow: 2px 2px 2px  #fff ;
+      /*           x   y desenfoque borde  color*/
+      transform: rotate(30deg);
+
+}

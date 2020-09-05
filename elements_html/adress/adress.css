@@ -1,0 +1,33 @@
+body{
+    font-family: 'Mulish', sans-serif;
+}
+
+:root{
+    --primary: #DB073D;
+}
+
+
+.container{
+    height: 100vh;
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container__tittle
+{
+    color: var(--primary);
+}
+
+.adress{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin: 10px 0  ;
+}

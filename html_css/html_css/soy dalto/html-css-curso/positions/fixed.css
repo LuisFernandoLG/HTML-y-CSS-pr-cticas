@@ -1,0 +1,8 @@
+.nav{
+      background-color: red;
+      position: fixed;
+
+
+}
+
+/*lo  que hace fixed es que pone al elemento por encima de todo a pesar de que se haga scroll para navs*/

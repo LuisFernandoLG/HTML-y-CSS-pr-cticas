@@ -1,0 +1,7 @@
+.nav{
+      background-color: red;
+      position: sticky;
+      top: 0px;
+}
+
+/*apartir de donde se coloque se pondrá encima el div*/

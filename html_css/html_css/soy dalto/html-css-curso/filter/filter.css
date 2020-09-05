@@ -1,0 +1,46 @@
+.container{
+      background-color: tomato;
+      width: 100%;
+      height: 800px;
+      padding: 20px;
+}
+
+
+img{
+
+      filter: blur(5px);
+
+      /*
+      filter: opacity(1);
+      */
+
+
+      filter: brightness(.5);
+      /*en escala de 0-1*/
+
+      /*filter: contrast();
+      escala del 0-1*/
+
+      /*filter: drop-shadow();
+      a las imagenes png o svg les da una sombra*
+      0px 0px 0px #505050 
+      /
+
+      /*se puede asignar varios valores a la vez*/
+      /*filter: grayscale();
+
+      valor por defecto es 1,*/
+
+}
+
+/*letter-spacing
+separacion entre letras
+
+scroll-behavior: smooth;
+efecto al momento de deslizar el scroll, darselo al body
+
+
+
+user-selected:none;
+para que no copien texto
+*/

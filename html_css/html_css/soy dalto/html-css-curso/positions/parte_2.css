@@ -1,0 +1,28 @@
+*{
+      font-family:Helvetica;
+      font-weight: 100;
+      font-size: 30px;
+}
+
+
+.caja1, .caja2{
+      width: 200px;
+      height: 200px;
+      margin: auto;
+}
+
+.caja1{
+      background-color: yellow;
+      /*border: 8px solid #505
+      el border ocupa algo del padding, debido a la propiedad box-sizing: ;*/
+      outline: 4px solid violet;
+      /*outline unicamente resalta cosas, sin ocupar pixeles, es decir no ocupa espacio entre los elementos*/
+
+
+}
+
+.caja2{
+
+      background-color: red   ;
+
+}

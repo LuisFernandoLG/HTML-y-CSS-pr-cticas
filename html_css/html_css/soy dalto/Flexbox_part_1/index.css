@@ -1,0 +1,136 @@
+:root{
+    --primary-color:#051C3B;
+    --secundary-color:#051C3B;
+}
+
+body{
+    font-family: 'Nunito', sans-serif;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+
+    display: grid;
+    grid-template-areas: 
+    "tittlee tittlee tittlee tittlee"
+    "startt startt startt startt"
+    "endd endd endd endd"
+    "centerr centerr centerr centerr"
+    "space-betweenn space-betweenn space-betweenn space-betweenn"
+    "space-aroundd space-aroundd space-aroundd space-aroundd"
+    "space-eventlyy space-eventlyy space-eventlyy space-eventlyy"
+    ;
+    /*
+    "tittlee tittlee tittlee tittlee"
+    "startt startt endd endd"
+    "centerr centerr space-betweenn space-betweenn"
+    "space-aroundd space-aroundd space-eventlyy space-eventlyy"
+    ;
+    */
+    grid-template-rows: 90px repeat(6, 1fr);
+    row-gap: 20px;
+    
+     
+}
+
+.tittle-container{
+    grid-area: tittlee;
+    background-color: tomato;
+}
+
+.tittle-container__text{
+    font-size: 70px;
+    text-align: center;
+}
+
+.start-container__box, .end-container__box, .center-container__box, .space-between-container__box, .space-around-container__box, .space-evently-container__box{
+    color: #fff;
+
+    margin: 0 10px;
+    width: 90px;
+    height: 100%;
+
+    /* cente text with flexbox center */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 30px;
+    font-weight: 800;
+}
+
+
+.start-container{
+    grid-area: startt;
+    background-color: #ddeae9;
+
+    display: flex;
+    justify-content: start;
+}
+
+.start-container__box{
+    background-color: #072956;
+}   
+
+
+
+.end-container{
+    grid-area: endd;
+    background-color: #d4e5e3;
+
+    display: flex;
+    justify-content: end;
+}
+
+.end-container__box{
+    background-color: #0a3672;
+}
+
+.center-container{
+    grid-area: centerr;
+    background-color: #cce0de;
+
+    display: flex;
+    justify-content: center;
+}
+
+.center-container__box{
+    background-color: #0c438d;
+}
+
+.space-between-container{
+    grid-area: space-betweenn;
+    background-color: #c4dbd8;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.space-between-container__box{
+    background-color: #0e50a9;
+}
+
+.space-around-container{
+    grid-area: space-aroundd;
+    background-color: #bcd6d3;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.space-around-container__box{
+    background-color: #115dc4;
+}
+
+.space-evently-container{
+    grid-area: space-eventlyy;
+    background-color: #b3d0ce;
+
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.space-evently-container__box{
+    background-color: #136adf;
+}

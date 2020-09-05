@@ -1,0 +1,20 @@
+.cajita{
+      width: 100px;
+      height: 100px;
+      background-color: #505050;
+      border-radius: 50%;
+      display: inline-block;
+      outline: 2px solid blue;
+      text-align: center;
+      
+}
+
+.cajita:hover{
+      background-color: black;
+}
+
+.caja{
+      display: inline-block;
+      margin: 39%;
+      outline: 3px solid brown;
+      }

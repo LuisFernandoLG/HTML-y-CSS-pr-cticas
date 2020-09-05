@@ -1,0 +1,396 @@
+* {
+      font-family: "Raleway", sans-serif;
+}
+
+:root {
+      --primary: #4caf82;
+      --hover_primary: #4caf50;
+      --secundary: #4c79af;
+      --hover-secundary: #547f91;
+
+
+      --white: #fff;
+      --black: #000;
+}
+
+.weight-200 {
+      font-weight: 200;
+}
+
+.weight-400 {
+      font-weight: 400;
+}
+
+.weight-800 {
+      font-weight: 800;
+}
+
+.grid_container {
+      width: 100%;
+      height: 100%;
+
+
+      display: grid;
+
+      grid-template-areas:
+            "nav nav nav nav"
+            "welcome welcome welcome welcome"
+            "welcome welcome welcome welcome"
+            "main main main main "
+            "main main main main "
+            "main main main main "            
+            "main main main main "
+            "footer footer footer footer"
+            
+            
+            ;
+
+      grid-template-rows: 60px auto repeat(5, auto) 60px;
+}
+
+
+/* NAV --------------------------------------------------------------- */
+.header {
+      grid-area: nav;
+
+      background-color: var(--secundary);
+      
+}
+
+.nav {
+      
+      width: 100%;
+      height: 100%;
+
+      display: flex;
+}
+
+.logo_container {
+      width: 70px;
+      height: 100%;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+
+.logo_container__logo {
+      color: var(--white);
+}
+
+.options {
+      background-color: var(--secundary);
+      flex-grow: 1;
+
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+}
+
+.options__option {
+      text-decoration: none;
+      color: var(--white);
+      text-align: right;
+
+      font-size: 15px;
+      padding: 10px;
+
+      outline: 1px solid transparent;
+}
+
+.options__option-animation:active {
+      background-color: var(--hover-secundary);
+}
+
+
+/* welcome ----------------------------------------------------------------------- */
+
+.welcome {
+      background-color: var(--primary);
+      
+
+      grid-area: welcome;
+      padding: 10px 20px;
+
+      display: grid;
+
+      grid-template-areas:
+            "text text"
+            "img img";
+
+      grid-template-rows: repeat(2,auto);
+}
+
+.welcome-text {
+      grid-area: text;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+}
+
+.welcome-text__tittle {
+      font-size: 50px;
+      color: var(--white);
+      text-align: center;
+}
+
+.welcome-text__quote {
+      margin-top: 10px;
+      font-size: 20px;
+      text-align: center;
+
+      color: var(--white);
+}
+
+.enjoy-button {
+      margin-top: 20px;
+      display: flex;
+      
+      width: 110px;
+      height: 40px;
+      
+      background-color: var(--secundary);
+      color: var(--white);
+      text-decoration: none;
+
+
+      justify-content: center;
+      align-items: center;
+}
+
+
+
+.enjoy-button:active {
+      background-color: var(--hover-secundary);
+}
+
+
+.welcome-img {
+      grid-area: img;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      padding: 20px;
+}
+
+.welcome-img__img {
+      width: 100%;
+      height: 100%;
+}
+
+.main{
+      
+      grid-area: main;
+}
+
+/* MAIN-------------------------------------------------- */
+
+.sections{
+ 
+
+
+      display: grid;
+
+      grid-template-areas: 
+      "objectives objectives"
+      "objectives objectives"
+      
+      "cbs cbs"
+      "cbs cbs"
+      
+      "core-values core-values"
+      "core-values core-values"
+      ;
+
+      grid-template-rows: repeat(6,auto);
+}
+
+.objectives{
+      background-color: var(--primary);
+      
+      grid-area: objectives ;
+
+      padding: 20px 30px;
+
+      display: grid;
+      grid-template-areas: 
+      "mision mision"
+      "vision vision"
+      "story story"
+      ;
+
+      grid-template-rows: repeat(3, auto);
+}
+
+
+
+
+.mision{
+      grid-area: mision;
+}
+
+
+.vision{
+      grid-area: vision;
+}
+
+.story{
+      grid-area: story;
+}
+
+
+
+.objective{
+      margin: 10px 10px;
+      border-radius: 10px;
+      padding: 20px;
+
+
+
+      background-color: var(--white);
+      display: flex;
+      flex-direction: column;
+
+      justify-content: center;
+      align-items: center;
+
+
+      border-bottom: 1px solid var(--primary);
+}
+
+.objective:last-child{
+      border-bottom: 1px solid transparent;
+}
+
+
+.objective__img{
+      width: 70%;
+      height: 70%;
+}
+
+
+.objective__tittle{
+      margin-top: 15px;
+      font-size: 25px;
+
+      color: var(--primary);
+}
+
+.objective__quote{
+      margin-top: 15px;
+      max-width: 90%;
+      font-size: 15px;
+      text-align: center;
+
+      color: var(--black);
+}
+
+.goal__quote{
+      max-width: 100%;
+      text-align: justify;
+
+}
+
+
+
+.cbs{
+      grid-area: cbs;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      background-color: var(--white);
+
+      padding: 10px;
+}
+
+.cbs__img{
+      width: 50%;
+      height: 50%;
+      
+}
+
+.cbs__tittle{
+      font-size: 30px;
+      margin-top: 10px;
+      color: var(--black);
+}
+
+.cbs__quote{
+      margin-top: 10px;
+      color: var(--black);
+      text-align: center;
+}
+
+
+
+
+.core-values{
+
+      padding-top: 30px;
+      grid-area: core-values;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+
+}
+
+.core-values__tittle{
+      font-size: 30px;
+      color: var(--black);
+      text-align: center;
+      width: 100%;
+}
+
+.core-values__value{
+      padding: 10px;
+
+      margin-top: 15px;
+      color: black;
+      font-size: 25px;
+}
+
+.core-values__value::first-letter{
+      font-weight: 800;
+      font-size: 30px;
+      color: var(--primary);
+}
+
+
+
+
+
+
+
+
+
+
+
+/* FOOTER */
+
+.footer{
+      margin-top: 20px;
+
+      grid-area: footer;
+      background-color: var(--secundary);
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px 0;
+}
+
+.footer__quote{
+      text-align: center;
+      font-size: 13px;
+      color: var(--white);
+
+}

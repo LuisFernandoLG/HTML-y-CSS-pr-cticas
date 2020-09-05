@@ -1,0 +1,26 @@
+.container{
+      display: grid;
+
+      grid-template-columns: repeat(3,minmax(150px,200px));
+
+      /*
+      
+      
+      el segundo parametro puede ser min-content o max-content
+
+
+      uno de los parametros en min, puede ser auto-fill, lo que hace es que si existe el espacio suficiente, arroja la caja hacia allá
+      
+
+      auto-fit, escala los elementos
+
+      minmax(min-content,150px)
+      */
+      grid-template-rows: repeat(3,150px);
+}
+
+.caja{
+      border: 1px solid  #000000
+      ;
+      background-color: #505050;
+}

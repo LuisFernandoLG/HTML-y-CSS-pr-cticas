@@ -1,0 +1,60 @@
+  
+body{
+    font-family: 'quicksand';
+
+    background-color: #030330;
+
+}
+
+.colors{
+    width: 95%;
+    height: 100vh;
+
+    margin: 0 auto;
+    margin-top: 30px;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 200px);
+    grid-template-rows: repeat(auto-fit, 200px);
+
+    gap: 20px 20px;
+
+
+
+    /* background 
+    background:
+    linear-gradient(0deg, hsla(306.18, 62.96%, 78.82%, 1) 10%, hsla(306.18, 62.96%, 78.82%, 0) 80%),
+    linear-gradient(287deg, hsla(196.55, 60.42%, 81.18%, 1) 47%, hsla(196.55, 60.42%, 81.18%, 0) 76%),
+    linear-gradient(360deg, hsla(51.43, 53.85%, 87.25%, 1) 100%, hsla(51.43, 53.85%, 87.25%, 0) 56%);*/
+}
+
+.color{
+    
+    background-color: #fff;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    align-content: center;
+
+    padding:10px;
+
+    border-radius: 16px;
+}
+
+.color__box{
+    width: 100%;
+    height: 80%;    
+    background-color: teal;
+
+        border-radius: 16px;
+
+}
+
+.color__hexa{
+    align-self: center;
+    font-size: 23px;
+}
+

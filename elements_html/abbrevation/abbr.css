@@ -1,0 +1,36 @@
+body{
+    font-family: 'Mulish', sans-serif;
+}
+
+:root{
+    --primary: #00A388;
+}
+
+.container{
+    
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container__tittle
+{
+    color: var(--primary);
+}
+
+.last-name{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin: 10px 0;
+}
+
+.last-name__completed{
+    color: #168039;
+}

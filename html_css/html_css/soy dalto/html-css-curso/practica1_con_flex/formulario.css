@@ -1,0 +1,88 @@
+body{
+      background-color: #1117;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.form-container{
+      display: flex;
+      background: #505050;
+
+      width: 80%;
+      height: 50%;
+      flex-wrap: wrap;
+      margin: 6% auto;
+      justify-content: center;
+      flex-wrap: wrap-reverse;
+      
+}
+
+
+
+
+
+
+.input-container{
+      width: 400px;
+      height: 60%;
+      flex-grow: 1;
+      background: #2222;
+      padding: 20px;      
+
+}
+
+.input-container__input{
+      width: 100%;
+      margin-bottom: 7px;
+      
+      
+}
+
+.image-container{
+      width: 200px;
+      height: 60%;
+      background: #faf2;
+      padding: 25px;
+      border-radius: 50%;
+      margin-top: 10px;
+      margin-bottom: 15px;
+}
+
+.image-background{
+      background: #ffffff;
+      height: 100%;
+      width: 100%;
+      border-radius: 50%;
+
+}
+img{
+      height: 100%;
+      width: 100%;
+      padding: 20px;      
+}
+
+.image-container:hover{
+      background-color: gray;
+}
+
+
+/*el wrap se aplica cuando el contenedor sea menor 
+usar porcentajes para que el contenedor pueda cambiar de tamaño*/
+

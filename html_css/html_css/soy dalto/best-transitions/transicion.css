@@ -1,0 +1,45 @@
+.container{
+      width: 1005;
+      height: 800px;
+      background-color: cornflowerblue;
+
+      padding: 20px;
+
+
+}
+
+.caja{
+      height: 100px;
+      width: 100px;
+      background-color: crimson;
+      
+      transition-property: transform;
+      transition-duration: .1s;
+      margin: auto;
+
+      margin-top: 300px;
+      
+}
+
+.container:hover > .caja{
+    transform: translate(100px,200px);
+    transform: scale(5);
+
+    /*transform: skew(40deg);
+    deformar hacia algún lado*/
+    /*en el eje x and y*/
+
+      /*
+    clip-path: circle();
+    ponerle la figura que queramos al div
+
+
+    EXISTEM GENERADORES DE TODO TIPO
+*/
+
+}
+
+p{
+      color: white;
+      font-size: 30px;
+}

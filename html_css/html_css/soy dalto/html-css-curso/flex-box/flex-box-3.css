@@ -1,0 +1,66 @@
+.flex-container{
+      display: flex;
+      /*flex-wrap: wrap;*/
+      /*justify-content: center ;*/
+
+
+      
+      /*
+      justify-content: center;
+      -space-evenly --> margen igual a todos los lados
+      left
+      center
+      right
+      
+      */ 
+
+}
+ 
+.flex-item{
+      width: 100px;
+      height: 300px;
+      min-width: 150px;
+      flex-grow: 1;
+      
+}
+
+.c1{
+      background: #505;
+      flex-basis: 350px;
+      flex-shrink: 2;
+
+
+      
+
+      /*
+      flex-basis: 300px;
+      funciona como un width
+      jaciendo que cuando los los demas divs adquieran sus valores predeterminados , este elementos ya pueda consumir el espacio en blanco
+*/
+
+      /*flex-shrink: 1;*/
+
+      /*le saca tamaño para poder mantener a las otras
+      que caja cederá más espacio cuando ya no haya espacio
+      shrink con grown juntos jiji
+      
+      */
+      
+      
+
+}
+
+.c2{
+      background: #505050;
+      
+
+      /*
+      flex-grow: 1;
+      se aplican a los elementos dentro del flex, haciendo que ocupen el espacio vacio*/
+
+}
+
+.c3{
+      background: #e4e;
+      
+}

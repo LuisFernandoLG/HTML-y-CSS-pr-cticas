@@ -1,0 +1,48 @@
+.container{
+      background-color: cadetblue;
+      height: 800px;
+      width: 100%;
+      padding: 10px;
+
+
+}
+
+
+.caja{
+      height: 100px;
+      width: 100px;
+
+      background-color: crimson;
+      animation-name: desplazarse;
+      animation-duration: 1s;
+      position: relative;
+      
+      animation-timing-function: ease-in-out;
+
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+
+      animation-fill-mode: forwards;
+      /*como terminará el elemento al finalizar el elmento
+      fordwars, lo deja igual que al final de la animacion
+
+      both, para arrancar con el 0%
+      */
+
+
+
+}
+
+@keyframes desplazarse{
+      0%{
+            position: relative;
+            left: 0;
+      }
+ 
+      100%{
+
+            left: 80%;
+
+      }
+
+}
